@@ -72,6 +72,7 @@ function bigImg(imgpath){
 	dialog.addEventListener('click',function(){
 		//将body中的遮罩层移除
 		document.body.removeChild(dialog);
+		document.body.removeAttribute('style');
 	});
 	//为图片设置点击事件
 	img.addEventListener('click',function(e){
@@ -90,6 +91,9 @@ window.addEventListener('resize',function(){
 	var height = document.documentElement.clientHeight;
 	//获取文档中遮罩层对象
 	var dialog = document.querySelector('.modal');
+	if(dialog){
+		dialog.style.height=height+'px';
+	}
 	//改变遮罩层的高度
-	dialog.style.height=height+'px';
+	// dialog.style.height=height+'px';
 })

@@ -46,7 +46,7 @@ body{
 /*伪类选择器*/
 .photo-box>img:hover{
 	transform: scale(2.0);/*放大2倍*/
-	z-index:9999;/*浮动到顶层*/
+	z-index:300;/*浮动到顶层*/
 }
 
 .p1{transform:rotate(20deg);}
@@ -95,7 +95,7 @@ body{
 	left:0;
 	z-index:10001;
 	width:100%;
-	min-width: 960px;
+	min-width: 500px;
 	text-align: center;
 	background-color:rgba(0,0,0,.8);
 }
